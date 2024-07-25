@@ -10,3 +10,4 @@ const db = mongoose.connection;
 
 // Export the db
 module.exports = db;
+
