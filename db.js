@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/BagApp', {
-
+mongoose.connect('mongodb+srv://rishi:etpe5GmpPUzHDxmL@cluster0.tuukkxt.mongodb.net/BAGAPP', {
+ 
 })
 .then(() => console.log('MongoDB connected...'))
 .catch(err => console.error('Connection error:', err));
