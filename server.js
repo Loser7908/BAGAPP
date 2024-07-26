@@ -4,7 +4,9 @@ const bodyParser=require('body-parser');
 const PORT=process.env.PORT ||  3000;
 const app=express();
 const Router=express.Router();
+require("dotenv").config();
 app.use(express.json());
+
 
 //models
 const User = require('./model/userinfo');

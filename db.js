@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+require("dotenv").config();
 const URL="mongodb+srv://rishi:etpe5GmpPUzHDxmL@cluster0.tuukkxt.mongodb.net/BAGAPP";
 
 mongoose.connect('mongodb+srv://rishi:etpe5GmpPUzHDxmL@cluster0.tuukkxt.mongodb.net/BAGAPP', {
