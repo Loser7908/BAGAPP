@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 const saltRounds = 10;
-const jwtSecret = 'your_jwt_secret'; // Replace with your secret key
+
 
 const UserSchema = new mongoose.Schema({
     username: {
@@ -55,10 +55,11 @@ UserSchema.methods.comparePassword = async function (candidatePassword) {
     }
 };
 
+/*
 // Method to generate JWT token
 UserSchema.methods.generateToken = function () {
     return jwt.sign({ id: this._id, username: this.username }, jwtSecret, { expiresIn: '1h' });
-};
+};*/
 
 const User = mongoose.model('User', UserSchema);
 
