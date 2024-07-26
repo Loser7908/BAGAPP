@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+const URL="mongodb+srv://rishi:etpe5GmpPUzHDxmL@cluster0.tuukkxt.mongodb.net/BAGAPP";
+
 mongoose.connect('mongodb+srv://rishi:etpe5GmpPUzHDxmL@cluster0.tuukkxt.mongodb.net/BAGAPP', {
  
 })
@@ -10,4 +12,6 @@ const db = mongoose.connection;
 
 // Export the db
 module.exports = db;
+
+
 
